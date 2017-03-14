@@ -1,15 +1,15 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node CREATED="1489406735405" ID="ID_789661850" MODIFIED="1489420201857" TEXT="gcloud">
+<node CREATED="1489406735405" ID="ID_789661850" LINK="https://cloud.google.com/sdk/gcloud/reference/" MODIFIED="1489481863597" TEXT="gcloud">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
-<node CREATED="1489406736455" ID="ID_354967985" MODIFIED="1489421849610" POSITION="right" TEXT="compute">
+<node CREATED="1489406736455" ID="ID_354967985" LINK="https://cloud.google.com/sdk/gcloud/reference/compute" MODIFIED="1489421849610" POSITION="right" TEXT="compute">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
-<node CREATED="1489406736455" ID="ID_923748757" MODIFIED="1489420201842" TEXT="addresses (regional)">
+<node CREATED="1489406736455" ID="ID_923748757" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/addresses" MODIFIED="1489420201842" TEXT="addresses (regional)">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
-<node CREATED="1489423717856" ID="ID_1511637977" MODIFIED="1489423721828" TEXT="create">
+<node CREATED="1489423717856" ID="ID_1511637977" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/addresses/create" MODIFIED="1489423721828" TEXT="create">
 <node CREATED="1489423723423" ID="ID_1978490540" MODIFIED="1489423732424" TEXT="[address name]">
 <node CREATED="1489423732424" ID="ID_1024105919" MODIFIED="1489423734291" TEXT="--region"/>
 <node CREATED="1489423736648" ID="ID_1859344083" MODIFIED="1489423761089" TEXT="--addresses">
@@ -18,18 +18,18 @@
 </node>
 </node>
 </node>
-<node CREATED="1489406736455" ID="ID_336042316" MODIFIED="1489420201842" TEXT="backend-services">
+<node CREATED="1489406736455" ID="ID_336042316" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/backend-services" MODIFIED="1489420201842" TEXT="backend-services">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736455" ID="ID_436580227" MODIFIED="1489420201842" TEXT="disk-types">
+<node CREATED="1489406736455" ID="ID_436580227" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/disk-types" MODIFIED="1489420201842" TEXT="disk-types">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736455" FOLDED="true" ID="ID_1063597137" MODIFIED="1489421830912" TEXT="disks (zonal)">
+<node CREATED="1489406736455" FOLDED="true" ID="ID_1063597137" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/disks" MODIFIED="1489421830912" TEXT="disks (zonal)">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
-<node CREATED="1489419391939" ID="ID_868298556" MODIFIED="1489420201842" TEXT="list">
+<node CREATED="1489419391939" ID="ID_868298556" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/disks/list" MODIFIED="1489420201842" TEXT="list">
 <edge COLOR="#6699ff"/>
 <node CREATED="1489419400212" ID="ID_870212418" MODIFIED="1489420201842" TEXT="--zones">
 <edge COLOR="#6699ff"/>
@@ -38,20 +38,20 @@
 </node>
 </node>
 </node>
-<node CREATED="1489419595100" ID="ID_1172137894" MODIFIED="1489420201842" TEXT="delete">
+<node CREATED="1489419595100" ID="ID_1172137894" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/disks/delete" MODIFIED="1489420201842" TEXT="delete">
 <edge COLOR="#6699ff"/>
 <node CREATED="1489419601839" ID="ID_1661647850" MODIFIED="1489420201842" TEXT="--zone">
 <edge COLOR="#6699ff"/>
 </node>
 </node>
 </node>
-<node CREATED="1489406736455" FOLDED="true" ID="ID_719373245" MODIFIED="1489421829987" TEXT="firewall-rules">
+<node CREATED="1489406736455" FOLDED="true" ID="ID_719373245" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/firewall-rules" MODIFIED="1489421829987" TEXT="firewall-rules">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
-<node CREATED="1489411313620" ID="ID_769890886" MODIFIED="1489420201842" TEXT="list">
+<node CREATED="1489411313620" ID="ID_769890886" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/firewall-rules/list" MODIFIED="1489420201842" TEXT="list">
 <edge COLOR="#6699ff"/>
 </node>
-<node CREATED="1489411720638" ID="ID_1830168092" MODIFIED="1489420201842" TEXT="create">
+<node CREATED="1489411720638" ID="ID_1830168092" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/firewall-rules/create" MODIFIED="1489420201842" TEXT="create">
 <edge COLOR="#6699ff"/>
 <node CREATED="1489411729248" ID="ID_1717853057" MODIFIED="1489420201842" TEXT="[rule name]">
 <edge COLOR="#6699ff"/>
@@ -82,42 +82,42 @@
 </node>
 </node>
 </node>
-<node CREATED="1489406736455" ID="ID_1137477053" MODIFIED="1489420201842" TEXT="forwarding-rules">
+<node CREATED="1489406736455" ID="ID_1137477053" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/forwarding-rules" MODIFIED="1489420201842" TEXT="forwarding-rules">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node COLOR="#000000" CREATED="1489406736455" ID="ID_973559281" MODIFIED="1489423335088" STYLE="fork" TEXT="instances (zonal)">
+<node COLOR="#000000" CREATED="1489406736455" ID="ID_973559281" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instances" MODIFIED="1489423335088" STYLE="fork" TEXT="instances (zonal)">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
-<node CREATED="1489406736455" ID="ID_1800727351" MODIFIED="1489420182265" TEXT="tail-serial-port-output">
-<edge COLOR="#6699ff"/>
-<font NAME="SansSerif" SIZE="10"/>
-</node>
-<node CREATED="1489406736455" ID="ID_243046565" MODIFIED="1489420182265" TEXT="stop">
+<node CREATED="1489406736455" ID="ID_1800727351" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instances/tail-serial-port-output" MODIFIED="1489480421519" TEXT="tail-serial-port-output">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736456" ID="ID_1322124999" MODIFIED="1489420182280" TEXT="start">
+<node CREATED="1489406736455" ID="ID_243046565" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instances/stop" MODIFIED="1489480435942" TEXT="stop">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736456" ID="ID_141637094" MODIFIED="1489420182265" TEXT="add-access-config">
+<node CREATED="1489406736456" ID="ID_1322124999" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instances/start" MODIFIED="1489420182280" TEXT="start">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736456" ID="ID_1752999848" MODIFIED="1489420182280" TEXT="add-metadata">
+<node CREATED="1489406736456" ID="ID_141637094" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instances/add-access-config" MODIFIED="1489420182265" TEXT="add-access-config">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736456" ID="ID_1826307312" MODIFIED="1489420182280" TEXT="add-tags">
+<node CREATED="1489406736456" ID="ID_1752999848" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instances/add-metadata" MODIFIED="1489420182280" TEXT="add-metadata">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736456" ID="ID_624894508" MODIFIED="1489420182280" TEXT="attache-disk">
+<node CREATED="1489406736456" ID="ID_1826307312" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instances/add-tags" MODIFIED="1489420182280" TEXT="add-tags">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736456" ID="ID_22138527" MODIFIED="1489420182280" TEXT="create">
+<node CREATED="1489406736456" ID="ID_624894508" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instances/attach-disk" MODIFIED="1489420182280" TEXT="attach-disk">
+<edge COLOR="#6699ff"/>
+<font NAME="SansSerif" SIZE="10"/>
+</node>
+<node CREATED="1489406736456" ID="ID_22138527" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instances/create" MODIFIED="1489480280395" TEXT="create">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 <node CREATED="1489412432816" ID="ID_675518627" MODIFIED="1489420201842" TEXT="[instance name]">
@@ -159,7 +159,7 @@
 </node>
 </node>
 <node CREATED="1489423352734" ID="ID_693669473" MODIFIED="1489423366241" TEXT="--scopes">
-<node CREATED="1489423366241" ID="ID_10373456" MODIFIED="1489423540844" TEXT="i.e. permissions (see gcloud compute instances create -help)"/>
+<node CREATED="1489423366241" ID="ID_10373456" MODIFIED="1489481883640" TEXT="i.e. permissions"/>
 </node>
 <node CREATED="1489424619803" ID="ID_500014107" MODIFIED="1489424627096" TEXT="--no-scopes">
 <node CREATED="1489424627112" ID="ID_1452140672" MODIFIED="1489424633386" TEXT="i.e. no permissions"/>
@@ -167,7 +167,7 @@
 </node>
 <node CREATED="1489423524896" ID="ID_295714670" MODIFIED="1489423530203" TEXT="--help"/>
 </node>
-<node CREATED="1489406736456" ID="ID_556301561" MODIFIED="1489420182280" TEXT="delete">
+<node CREATED="1489406736456" ID="ID_556301561" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instances/delete" MODIFIED="1489480353057" TEXT="delete">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 <node CREATED="1489413107003" ID="ID_711444225" MODIFIED="1489420201842" TEXT="[instance name]">
@@ -186,11 +186,11 @@
 </node>
 </node>
 </node>
-<node CREATED="1489406736456" ID="ID_1439481887" MODIFIED="1489420182280" TEXT="delete-access-config">
+<node CREATED="1489406736456" ID="ID_1439481887" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instances/delete-access-config" MODIFIED="1489420182280" TEXT="delete-access-config">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736456" ID="ID_293526597" MODIFIED="1489420182280" TEXT="describe">
+<node CREATED="1489406736456" ID="ID_293526597" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instances/describe" MODIFIED="1489420182280" TEXT="describe">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 <node CREATED="1489418367143" ID="ID_1468645463" MODIFIED="1489420201842" TEXT="[instance name]">
@@ -206,69 +206,69 @@
 </node>
 </node>
 </node>
-<node CREATED="1489406736456" ID="ID_1343284936" MODIFIED="1489420182280" TEXT="detach-disk">
+<node CREATED="1489406736456" ID="ID_1343284936" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instances/detach-disk" MODIFIED="1489420182280" TEXT="detach-disk">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736456" ID="ID_1782839281" MODIFIED="1489420182280" TEXT="get-serial-port-output">
+<node CREATED="1489406736456" ID="ID_1782839281" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instances/get-serial-port-output" MODIFIED="1489420182280" TEXT="get-serial-port-output">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736456" ID="ID_1429701918" MODIFIED="1489420182280" TEXT="list">
+<node CREATED="1489406736456" ID="ID_1429701918" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instances/list" MODIFIED="1489420182280" TEXT="list">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736456" ID="ID_519600491" MODIFIED="1489420182280" TEXT="move">
+<node CREATED="1489406736456" ID="ID_519600491" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instances/move" MODIFIED="1489420182280" TEXT="move">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736456" ID="ID_306604406" MODIFIED="1489420182280" TEXT="remove-metadata">
+<node CREATED="1489406736456" ID="ID_306604406" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instances/remove-metadata" MODIFIED="1489420182280" TEXT="remove-metadata">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736456" ID="ID_875161310" MODIFIED="1489420182280" TEXT="remove-tags">
+<node CREATED="1489406736456" ID="ID_875161310" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instances/remove-tags" MODIFIED="1489420182280" TEXT="remove-tags">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736456" ID="ID_390063614" MODIFIED="1489420182280" TEXT="reset">
+<node CREATED="1489406736456" ID="ID_390063614" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instances/reset" MODIFIED="1489420182280" TEXT="reset">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736456" ID="ID_780791307" MODIFIED="1489420182280" TEXT="set-disk-auto-delete">
+<node CREATED="1489406736456" ID="ID_780791307" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instances/set-disk-auto-delete" MODIFIED="1489420182280" TEXT="set-disk-auto-delete">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736456" ID="ID_1693463903" MODIFIED="1489420182280" TEXT="set-machine-type">
+<node CREATED="1489406736456" ID="ID_1693463903" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instances/set-machine-type" MODIFIED="1489420182280" TEXT="set-machine-type">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736456" ID="ID_1792897976" MODIFIED="1489420182280" TEXT="set-scheduling">
+<node CREATED="1489406736456" ID="ID_1792897976" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instances/set-scheduling" MODIFIED="1489420182280" TEXT="set-scheduling">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489418284865" ID="ID_1901026478" MODIFIED="1489420201842" TEXT="stop">
+<node CREATED="1489418284865" ID="ID_1901026478" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instances/stop" MODIFIED="1489420201842" TEXT="stop">
 <edge COLOR="#6699ff"/>
 <node CREATED="1489418287074" ID="ID_1570435183" MODIFIED="1489420201842" TEXT="[instance name]">
 <edge COLOR="#6699ff"/>
 </node>
 </node>
 </node>
-<node CREATED="1489406736456" ID="ID_646659714" MODIFIED="1489420201842" TEXT="health-checks">
+<node CREATED="1489406736456" ID="ID_646659714" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/health-checks" MODIFIED="1489420201842" TEXT="health-checks">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736456" ID="ID_1206052915" MODIFIED="1489420201842" TEXT="http-health-checks">
+<node CREATED="1489406736456" ID="ID_1206052915" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/http-health-checks" MODIFIED="1489420201842" TEXT="http-health-checks">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736456" ID="ID_1429535848" MODIFIED="1489420201842" TEXT="https-health-checks">
+<node CREATED="1489406736456" ID="ID_1429535848" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/https-health-checks" MODIFIED="1489420201842" TEXT="https-health-checks">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736457" FOLDED="true" ID="ID_908773944" MODIFIED="1489421827105" TEXT="images (global)">
+<node CREATED="1489406736457" FOLDED="true" ID="ID_908773944" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/images" MODIFIED="1489421827105" TEXT="images (global)">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
-<node CREATED="1489417043062" ID="ID_1802701159" MODIFIED="1489420201826" TEXT="list">
+<node CREATED="1489417043062" ID="ID_1802701159" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/images/list" MODIFIED="1489420201826" TEXT="list">
 <edge COLOR="#6699ff"/>
 <node CREATED="1489417046892" ID="ID_1993332095" MODIFIED="1489420201826" TEXT="--regexp">
 <edge COLOR="#6699ff"/>
@@ -280,7 +280,7 @@
 <edge COLOR="#6699ff"/>
 </node>
 </node>
-<node CREATED="1489418945043" ID="ID_1040320959" MODIFIED="1489420201826" TEXT="create">
+<node CREATED="1489418945043" ID="ID_1040320959" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/images/create" MODIFIED="1489420201826" TEXT="create">
 <edge COLOR="#6699ff"/>
 <node CREATED="1489418949296" ID="ID_1749776119" MODIFIED="1489420201826" TEXT="[image name]">
 <edge COLOR="#6699ff"/>
@@ -295,7 +295,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1489419115112" ID="ID_1939529751" MODIFIED="1489420201826" TEXT="describe">
+<node CREATED="1489419115112" ID="ID_1939529751" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/images/describe" MODIFIED="1489420201826" TEXT="describe">
 <edge COLOR="#6699ff"/>
 <node CREATED="1489419120160" ID="ID_474157763" MODIFIED="1489420201826" TEXT="[image name]">
 <edge COLOR="#6699ff"/>
@@ -307,7 +307,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1489419725377" ID="ID_942432250" MODIFIED="1489420201826" TEXT="deprecate">
+<node CREATED="1489419725377" ID="ID_942432250" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/images/deprecate" MODIFIED="1489420201826" TEXT="deprecate">
 <edge COLOR="#6699ff"/>
 <node CREATED="1489419753421" ID="ID_846195895" MODIFIED="1489420201826" TEXT="[image name]">
 <edge COLOR="#6699ff"/>
@@ -341,31 +341,31 @@
 </node>
 </node>
 </node>
-<node CREATED="1489406736457" ID="ID_1647457659" MODIFIED="1489420201826" TEXT="instance-groups">
+<node CREATED="1489406736457" ID="ID_1647457659" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instance-groups" MODIFIED="1489420201826" TEXT="instance-groups">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736457" ID="ID_354514915" MODIFIED="1489420201826" TEXT="instance-templates">
+<node CREATED="1489406736457" ID="ID_354514915" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instance-templates" MODIFIED="1489420201826" TEXT="instance-templates">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736457" ID="ID_1243107876" MODIFIED="1489420201826" TEXT="machine-types (zonal)">
+<node CREATED="1489406736457" ID="ID_1243107876" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/machine-types" MODIFIED="1489420201826" TEXT="machine-types (zonal)">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736457" FOLDED="true" ID="ID_727219983" MODIFIED="1489421828722" TEXT="networks (global but subnet regional)">
+<node CREATED="1489406736457" FOLDED="true" ID="ID_727219983" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/networks" MODIFIED="1489421828722" TEXT="networks (global but subnet regional)">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
-<node CREATED="1489411148552" ID="ID_604676822" MODIFIED="1489420201826" TEXT="list">
+<node CREATED="1489411148552" ID="ID_604676822" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/networks/list" MODIFIED="1489420201826" TEXT="list">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489411270169" ID="ID_1812338268" MODIFIED="1489420201826" TEXT="subnets">
+<node CREATED="1489411270169" ID="ID_1812338268" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/networks/subnets" MODIFIED="1489420201826" TEXT="subnets">
 <edge COLOR="#6699ff"/>
-<node CREATED="1489411276325" ID="ID_706200652" MODIFIED="1489420201826" TEXT="list">
+<node CREATED="1489411276325" ID="ID_706200652" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/networks/subnets/list" MODIFIED="1489420201826" TEXT="list">
 <edge COLOR="#6699ff"/>
 </node>
-<node CREATED="1489411535240" ID="ID_1512144960" MODIFIED="1489420201826" TEXT="create">
+<node CREATED="1489411535240" ID="ID_1512144960" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/networks/subnets/create" MODIFIED="1489420201826" TEXT="create">
 <edge COLOR="#6699ff"/>
 <node CREATED="1489411542157" ID="ID_1317174944" MODIFIED="1489420201826" TEXT="[subnet name]">
 <edge COLOR="#6699ff"/>
@@ -381,7 +381,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1489411366631" ID="ID_122973019" MODIFIED="1489420201826" TEXT="create">
+<node CREATED="1489411366631" ID="ID_122973019" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/networks/create" MODIFIED="1489420201826" TEXT="create">
 <edge COLOR="#6699ff"/>
 <node CREATED="1489411374050" ID="ID_1683936479" MODIFIED="1489420201826" TEXT="[network name]">
 <edge COLOR="#6699ff"/>
@@ -390,80 +390,80 @@
 </node>
 </node>
 </node>
-<node CREATED="1489411496712" ID="ID_509943330" MODIFIED="1489420201826" TEXT="describe">
+<node CREATED="1489411496712" ID="ID_509943330" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/networks/describe" MODIFIED="1489420201826" TEXT="describe">
 <edge COLOR="#6699ff"/>
 <node CREATED="1489411500710" ID="ID_995475302" MODIFIED="1489420201826" TEXT="[network name]">
 <edge COLOR="#6699ff"/>
 </node>
 </node>
 </node>
-<node CREATED="1489406736457" ID="ID_762319720" MODIFIED="1489420201826" TEXT="operations">
+<node CREATED="1489406736457" ID="ID_762319720" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/operations" MODIFIED="1489420201826" TEXT="operations">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736457" ID="ID_1467186401" MODIFIED="1489420201826" TEXT="project-info">
+<node CREATED="1489406736457" ID="ID_1467186401" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/project-info" MODIFIED="1489420201826" TEXT="project-info">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736457" ID="ID_903801468" MODIFIED="1489420201826" TEXT="regions">
+<node CREATED="1489406736457" ID="ID_903801468" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/regions" MODIFIED="1489420201826" TEXT="regions">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736457" ID="ID_1592865599" MODIFIED="1489420201826" TEXT="routers">
+<node CREATED="1489406736457" ID="ID_1592865599" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/routers" MODIFIED="1489420201826" TEXT="routers">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736457" FOLDED="true" ID="ID_1994973381" MODIFIED="1489421833743" TEXT="routes (global)">
+<node CREATED="1489406736457" FOLDED="true" ID="ID_1994973381" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/routes" MODIFIED="1489421833743" TEXT="routes (global)">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
-<node CREATED="1489411338679" ID="ID_1420292646" MODIFIED="1489420201826" TEXT="list">
+<node CREATED="1489411338679" ID="ID_1420292646" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/routes/list" MODIFIED="1489420201826" TEXT="list">
 <edge COLOR="#6699ff"/>
 </node>
 </node>
-<node CREATED="1489406736457" ID="ID_340930580" MODIFIED="1489420201826" TEXT="snapshots">
-<edge COLOR="#6699ff"/>
-<font NAME="SansSerif" SIZE="10"/>
-</node>
-<node CREATED="1489406736457" ID="ID_1098648025" MODIFIED="1489420201826" TEXT="ssl-certificates">
+<node CREATED="1489406736457" ID="ID_340930580" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/snapshots" MODIFIED="1489420201826" TEXT="snapshots">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736457" ID="ID_844666063" MODIFIED="1489420201826" TEXT="target-http-proxies">
+<node CREATED="1489406736457" ID="ID_1098648025" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/ssl-certificates" MODIFIED="1489420201826" TEXT="ssl-certificates">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736457" ID="ID_1008785595" MODIFIED="1489420201826" TEXT="target-instances">
+<node CREATED="1489406736457" ID="ID_844666063" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/target-http-proxies" MODIFIED="1489420201826" TEXT="target-http-proxies">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736457" ID="ID_784720089" MODIFIED="1489420201826" TEXT="target-pools">
+<node CREATED="1489406736457" ID="ID_1008785595" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/target-instances" MODIFIED="1489420201826" TEXT="target-instances">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736457" ID="ID_295017830" MODIFIED="1489420201826" TEXT="target-ssl-proxies">
+<node CREATED="1489406736457" ID="ID_784720089" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/target-pools" MODIFIED="1489420201826" TEXT="target-pools">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736457" ID="ID_1365535042" MODIFIED="1489420201826" TEXT="target-vpn-gateways">
+<node CREATED="1489406736457" ID="ID_295017830" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/target-ssl-proxies" MODIFIED="1489420201826" TEXT="target-ssl-proxies">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736457" ID="ID_1236671788" MODIFIED="1489420201826" TEXT="url-maps">
+<node CREATED="1489406736457" ID="ID_1365535042" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/target-vpn-gateways" MODIFIED="1489420201826" TEXT="target-vpn-gateways">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736457" ID="ID_935667826" MODIFIED="1489420201826" TEXT="vpn-tunnels">
+<node CREATED="1489406736457" ID="ID_1236671788" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/url-maps" MODIFIED="1489420201826" TEXT="url-maps">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736457" ID="ID_817732470" MODIFIED="1489420201826" TEXT="zones">
+<node CREATED="1489406736457" ID="ID_935667826" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/vpn-tunnels" MODIFIED="1489420201826" TEXT="vpn-tunnels">
+<edge COLOR="#6699ff"/>
+<font NAME="SansSerif" SIZE="10"/>
+</node>
+<node CREATED="1489406736457" ID="ID_817732470" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/zones" MODIFIED="1489420201826" TEXT="zones">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
 </node>
-<node CREATED="1489423869070" ID="ID_551840812" MODIFIED="1489424650106" POSITION="left" TEXT="config">
-<node CREATED="1489423873389" ID="ID_914918713" MODIFIED="1489423874539" TEXT="list"/>
-<node CREATED="1489424656850" ID="ID_1694926775" MODIFIED="1489424658613" TEXT="set">
+<node CREATED="1489423869070" ID="ID_551840812" LINK="https://cloud.google.com/sdk/gcloud/reference/config" MODIFIED="1489424650106" POSITION="left" TEXT="config">
+<node CREATED="1489423873389" ID="ID_914918713" LINK="https://cloud.google.com/sdk/gcloud/reference/config/list" MODIFIED="1489423874539" TEXT="list"/>
+<node CREATED="1489424656850" ID="ID_1694926775" LINK="https://cloud.google.com/sdk/gcloud/reference/config/set" MODIFIED="1489424658613" TEXT="set">
 <node CREATED="1489424659824" ID="ID_1292163850" MODIFIED="1489424663585" TEXT="account">
 <node CREATED="1489424664716" ID="ID_454609830" MODIFIED="1489424676327" TEXT="[email address of account]"/>
 </node>
