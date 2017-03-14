@@ -25,8 +25,9 @@
 <node CREATED="1489406736455" ID="ID_436580227" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/disk-types" MODIFIED="1489420201842" TEXT="disk-types">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
+<node CREATED="1489488440330" ID="ID_167063053" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/disk-types/list" MODIFIED="1489491904565" TEXT="list"/>
 </node>
-<node CREATED="1489406736455" FOLDED="true" ID="ID_1063597137" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/disks" MODIFIED="1489421830912" TEXT="disks (zonal)">
+<node CREATED="1489406736455" ID="ID_1063597137" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/disks" MODIFIED="1489488201555" TEXT="disks (zonal)">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 <node CREATED="1489419391939" ID="ID_868298556" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/disks/list" MODIFIED="1489420201842" TEXT="list">
@@ -40,8 +41,30 @@
 </node>
 <node CREATED="1489419595100" ID="ID_1172137894" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/disks/delete" MODIFIED="1489420201842" TEXT="delete">
 <edge COLOR="#6699ff"/>
+<node CREATED="1489491806966" ID="ID_1308179672" MODIFIED="1489491810788" TEXT="[disk name]">
 <node CREATED="1489419601839" ID="ID_1661647850" MODIFIED="1489420201842" TEXT="--zone">
 <edge COLOR="#6699ff"/>
+</node>
+<node CREATED="1489494110596" ID="ID_638343027" MODIFIED="1489494116876" TEXT="can be a list of disk names"/>
+</node>
+</node>
+<node CREATED="1489488210157" ID="ID_897606499" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/disks/create" MODIFIED="1489491823937" TEXT="create">
+<node CREATED="1489491825084" ID="ID_1327836528" MODIFIED="1489491828533" TEXT="[disk name]">
+<node CREATED="1489488218472" ID="ID_467608645" MODIFIED="1489488222677" TEXT="--zone"/>
+<node CREATED="1489488225233" ID="ID_1054235225" MODIFIED="1489488387407" TEXT="--size">
+<node CREATED="1489488505119" ID="ID_721484243" MODIFIED="1489488555387" TEXT="number appended by KB, MB, GB or TB - multiples of 10GB"/>
+</node>
+<node CREATED="1489488233418" ID="ID_970249763" MODIFIED="1489488398875" TEXT="--source-snapshot"/>
+<node CREATED="1489488241458" ID="ID_181253723" MODIFIED="1489488404871" TEXT="--image"/>
+<node CREATED="1489488263763" ID="ID_498924684" MODIFIED="1489488409608" TEXT="--type">
+<node CREATED="1489488445763" ID="ID_1951731947" MODIFIED="1489488450180" TEXT="get from disk-types"/>
+</node>
+</node>
+</node>
+<node CREATED="1489489619058" ID="ID_416543991" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/disks/snapshot" MODIFIED="1489491874544" TEXT="snapshot">
+<node CREATED="1489491746991" ID="ID_140637667" MODIFIED="1489491755961" TEXT="[instance name]">
+<node CREATED="1489489655677" ID="ID_28095993" MODIFIED="1489489661052" TEXT="--zone"/>
+<node CREATED="1489489662230" ID="ID_787322280" MODIFIED="1489489668701" TEXT="--snapshot-names"/>
 </node>
 </node>
 </node>
@@ -116,6 +139,15 @@
 <node CREATED="1489406736456" ID="ID_624894508" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instances/attach-disk" MODIFIED="1489420182280" TEXT="attach-disk">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
+<node CREATED="1489493192134" ID="ID_1040858891" MODIFIED="1489493214359" TEXT="[instance name]">
+<node CREATED="1489493214375" ID="ID_211433316" MODIFIED="1489493219370" TEXT="--disk">
+<node CREATED="1489493219370" ID="ID_1247772530" MODIFIED="1489493233200" TEXT="[disk name]"/>
+</node>
+<node CREATED="1489493237076" ID="ID_614613029" MODIFIED="1489493245339" TEXT="--device-name">
+<node CREATED="1489493245339" ID="ID_1502124489" MODIFIED="1489493275626" TEXT="[disk name as seen by OS]"/>
+</node>
+<node CREATED="1489493277746" ID="ID_926703245" MODIFIED="1489493282181" TEXT="--zone"/>
+</node>
 </node>
 <node CREATED="1489406736456" ID="ID_22138527" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instances/create" MODIFIED="1489480280395" TEXT="create">
 <edge COLOR="#6699ff"/>
@@ -164,6 +196,9 @@
 <node CREATED="1489424619803" ID="ID_500014107" MODIFIED="1489424627096" TEXT="--no-scopes">
 <node CREATED="1489424627112" ID="ID_1452140672" MODIFIED="1489424633386" TEXT="i.e. no permissions"/>
 </node>
+<node CREATED="1489492550881" ID="ID_539202035" MODIFIED="1489492584278" TEXT="--disk">
+<node CREATED="1489492593900" ID="ID_1795899992" MODIFIED="1489492720785" TEXT="name=[disk name],device-name=[disk name as seen by OS],mode=[ro|rw],boot=[yes|no]"/>
+</node>
 </node>
 <node CREATED="1489423524896" ID="ID_295714670" MODIFIED="1489423530203" TEXT="--help"/>
 </node>
@@ -209,6 +244,12 @@
 <node CREATED="1489406736456" ID="ID_1343284936" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instances/detach-disk" MODIFIED="1489420182280" TEXT="detach-disk">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
+<node CREATED="1489493760998" ID="ID_1934859765" MODIFIED="1489493766967" TEXT="[instance name]">
+<node CREATED="1489493766967" ID="ID_1124087926" MODIFIED="1489493770580" TEXT="--disk">
+<node CREATED="1489493770580" ID="ID_1295221605" MODIFIED="1489493776793" TEXT="[disk name]"/>
+</node>
+<node CREATED="1489493777940" ID="ID_423717906" MODIFIED="1489493782299" TEXT="--zone"/>
+</node>
 </node>
 <node CREATED="1489406736456" ID="ID_1782839281" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instances/get-serial-port-output" MODIFIED="1489420182280" TEXT="get-serial-port-output">
 <edge COLOR="#6699ff"/>
@@ -250,6 +291,7 @@
 <edge COLOR="#6699ff"/>
 <node CREATED="1489418287074" ID="ID_1570435183" MODIFIED="1489420201842" TEXT="[instance name]">
 <edge COLOR="#6699ff"/>
+<node CREATED="1489491613287" ID="ID_518434662" MODIFIED="1489491615781" TEXT="--zone"/>
 </node>
 </node>
 </node>
@@ -353,7 +395,7 @@
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736457" FOLDED="true" ID="ID_727219983" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/networks" MODIFIED="1489421828722" TEXT="networks (global but subnet regional)">
+<node CREATED="1489406736457" FOLDED="true" ID="ID_727219983" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/networks" MODIFIED="1489492076596" TEXT="networks (global but subnet regional)">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 <node CREATED="1489411148552" ID="ID_604676822" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/networks/list" MODIFIED="1489420201826" TEXT="list">
@@ -423,6 +465,16 @@
 <node CREATED="1489406736457" ID="ID_340930580" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/snapshots" MODIFIED="1489420201826" TEXT="snapshots">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
+<node CREATED="1489491966904" ID="ID_1006557203" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/snapshots/describe" MODIFIED="1489492072193" TEXT="describe">
+<node CREATED="1489491971483" ID="ID_298260821" MODIFIED="1489491978612" TEXT="[snapshot name]">
+<node CREATED="1489491978612" ID="ID_29192607" MODIFIED="1489491981442" TEXT="--format"/>
+</node>
+</node>
+<node CREATED="1489493964872" ID="ID_155342852" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/snapshots/delete" MODIFIED="1489494036044" TEXT="delete">
+<node CREATED="1489493972811" ID="ID_1384752980" MODIFIED="1489494003356" TEXT="[snapshot name]">
+<node CREATED="1489494003356" ID="ID_277473563" MODIFIED="1489494009489" TEXT="can be list of snapshot names"/>
+</node>
+</node>
 </node>
 <node CREATED="1489406736457" ID="ID_1098648025" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/ssl-certificates" MODIFIED="1489420201826" TEXT="ssl-certificates">
 <edge COLOR="#6699ff"/>
@@ -459,6 +511,7 @@
 <node CREATED="1489406736457" ID="ID_817732470" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/zones" MODIFIED="1489420201826" TEXT="zones">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
+<node CREATED="1489492257955" ID="ID_1086487727" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/zones/list" MODIFIED="1489492281716" TEXT="list"/>
 </node>
 </node>
 <node CREATED="1489423869070" ID="ID_551840812" LINK="https://cloud.google.com/sdk/gcloud/reference/config" MODIFIED="1489424650106" POSITION="left" TEXT="config">
@@ -467,7 +520,24 @@
 <node CREATED="1489424659824" ID="ID_1292163850" MODIFIED="1489424663585" TEXT="account">
 <node CREATED="1489424664716" ID="ID_454609830" MODIFIED="1489424676327" TEXT="[email address of account]"/>
 </node>
+<node CREATED="1489490140720" ID="ID_140227378" MODIFIED="1489490142514" TEXT="project">
+<node CREATED="1489490147171" ID="ID_1505410614" MODIFIED="1489490165679" TEXT="[project id]"/>
 </node>
+</node>
+<node CREATED="1489489891216" ID="ID_42362094" LINK="https://cloud.google.com/sdk/gcloud/reference/config/configurations/" MODIFIED="1489492923300" TEXT="configurations">
+<node CREATED="1489489898457" ID="ID_1578135548" LINK="https://cloud.google.com/sdk/gcloud/reference/config/configurations/list" MODIFIED="1489492932927" TEXT="list"/>
+</node>
+</node>
+<node CREATED="1489489869076" ID="ID_1013576091" LINK="https://cloud.google.com/sdk/gcloud/reference/components/" MODIFIED="1489492880968" POSITION="left" TEXT="components">
+<node CREATED="1489489875564" ID="ID_1263611932" LINK="https://cloud.google.com/sdk/gcloud/reference/components/update" MODIFIED="1489492904284" TEXT="update"/>
+<node CREATED="1489490077911" ID="ID_1296731648" LINK="https://cloud.google.com/sdk/gcloud/reference/components/list" MODIFIED="1489492891646" TEXT="list"/>
+</node>
+<node CREATED="1489490294383" ID="ID_585734921" LINK="https://cloud.google.com/sdk/gcloud/reference/projects" MODIFIED="1489492854654" POSITION="left" TEXT="projects">
+<node CREATED="1489490297544" ID="ID_1158614407" LINK="https://cloud.google.com/sdk/gcloud/reference/projects/list" MODIFIED="1489492865731" TEXT="list"/>
+</node>
+<node CREATED="1489489787477" ID="ID_789700433" LINK="https://cloud.google.com/sdk/gcloud/reference/init" MODIFIED="1489492841519" POSITION="left" TEXT="init"/>
+<node CREATED="1489490097244" ID="ID_1332914179" LINK="https://cloud.google.com/sdk/gcloud/reference/auth/" MODIFIED="1489492816342" POSITION="left" TEXT="auth">
+<node CREATED="1489490100744" ID="ID_464481482" LINK="https://cloud.google.com/sdk/gcloud/reference/auth/login" MODIFIED="1489492825861" TEXT="login"/>
 </node>
 </node>
 </map>
