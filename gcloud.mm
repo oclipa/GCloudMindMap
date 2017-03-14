@@ -68,7 +68,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1489406736455" FOLDED="true" ID="ID_719373245" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/firewall-rules" MODIFIED="1489421829987" TEXT="firewall-rules">
+<node CREATED="1489406736455" ID="ID_719373245" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/firewall-rules" MODIFIED="1489514672613" TEXT="firewall-rules">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 <node CREATED="1489411313620" ID="ID_769890886" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/firewall-rules/list" MODIFIED="1489420201842" TEXT="list">
@@ -101,6 +101,13 @@
 <node CREATED="1489412284222" ID="ID_1052063423" MODIFIED="1489420201842" TEXT="0.0.0.0/0 (all networks)">
 <edge COLOR="#6699ff"/>
 </node>
+</node>
+</node>
+</node>
+<node CREATED="1489514676922" ID="ID_51614336" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/firewall-rules/update" MODIFIED="1489515518394" TEXT="update">
+<node CREATED="1489514685068" ID="ID_1044965642" MODIFIED="1489514695395" TEXT="[rule name]">
+<node CREATED="1489514695396" ID="ID_1132265607" MODIFIED="1489514709509" TEXT="--source-ranges">
+<node CREATED="1489514709509" ID="ID_609304155" MODIFIED="1489514799333" TEXT="list of ip addresses"/>
 </node>
 </node>
 </node>
@@ -307,7 +314,7 @@
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736457" FOLDED="true" ID="ID_908773944" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/images" MODIFIED="1489421827105" TEXT="images (global)">
+<node CREATED="1489406736457" ID="ID_908773944" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/images" MODIFIED="1489513555631" TEXT="images (global)">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 <node CREATED="1489417043062" ID="ID_1802701159" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/images/list" MODIFIED="1489420201826" TEXT="list">
@@ -386,6 +393,9 @@
 <node CREATED="1489406736457" ID="ID_1647457659" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instance-groups" MODIFIED="1489420201826" TEXT="instance-groups">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
+<node CREATED="1489511164253" FOLDED="true" ID="ID_738752864" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instance-groups/unmanaged/" MODIFIED="1489512905240" TEXT="unmanaged">
+<node CREATED="1489511181248" ID="ID_1609322873" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instance-groups/unmanaged/create" MODIFIED="1489512225728" TEXT="create"/>
+</node>
 </node>
 <node CREATED="1489406736457" ID="ID_354514915" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instance-templates" MODIFIED="1489420201826" TEXT="instance-templates">
 <edge COLOR="#6699ff"/>
