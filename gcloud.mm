@@ -581,17 +581,118 @@
 </node>
 </node>
 </node>
-<node CREATED="1489406736457" FOLDED="true" ID="ID_1647457659" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instance-groups" MODIFIED="1489919299569" TEXT="instance-groups">
+<node CREATED="1489406736457" ID="ID_1647457659" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instance-groups" MODIFIED="1490110530160" TEXT="instance-groups">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
-<node CREATED="1489511164253" FOLDED="true" ID="ID_738752864" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instance-groups/unmanaged/" MODIFIED="1489833675617" TEXT="unmanaged">
+<node CREATED="1489511164253" ID="ID_738752864" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instance-groups/unmanaged/" MODIFIED="1490110531352" TEXT="unmanaged">
 <font NAME="SansSerif" SIZE="10"/>
 <node CREATED="1489511181248" ID="ID_1609322873" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instance-groups/unmanaged/create" MODIFIED="1489512225728" TEXT="create"/>
 </node>
+<node CREATED="1490110538721" ID="ID_949665793" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instance-groups/managed/" MODIFIED="1490115985445" TEXT="managed">
+<node CREATED="1490112868387" ID="ID_1147461973" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instance-groups/managed/create" MODIFIED="1490115826654" TEXT="create">
+<node CREATED="1490112871148" FOLDED="true" ID="ID_1500195091" MODIFIED="1490115975622" TEXT="[instance group name]">
+<node CREATED="1490112880363" ID="ID_1491904124" MODIFIED="1490112892613" TEXT="--base-instance-name">
+<node CREATED="1490112893961" ID="ID_303137070" MODIFIED="1490113120081" TEXT="the base name of the instance names (e.g. [base-name]-[random identifier string]"/>
 </node>
-<node CREATED="1489406736457" ID="ID_354514915" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instance-templates" MODIFIED="1489420201826" TEXT="instance-templates">
+<node CREATED="1490112909872" ID="ID_1963994443" MODIFIED="1490112914294" TEXT="--size">
+<node CREATED="1490112914294" ID="ID_1985226596" MODIFIED="1490112921260" TEXT="the number of instances in the group"/>
+</node>
+<node CREATED="1490112924375" ID="ID_155903467" MODIFIED="1490112929408" TEXT="--template">
+<node CREATED="1490112929409" ID="ID_346979158" MODIFIED="1490112950587" TEXT="the instance-template to use for the instances]"/>
+</node>
+<node CREATED="1490112968157" ID="ID_248852082" MODIFIED="1490112970849" TEXT="--zone"/>
+</node>
+</node>
+<node CREATED="1490115475607" ID="ID_393739912" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instance-groups/managed/delete" MODIFIED="1490115887074" TEXT="delete">
+<node CREATED="1490115480488" ID="ID_1242407369" MODIFIED="1490115486952" TEXT="[instance group name]">
+<node CREATED="1490115486952" ID="ID_857515304" MODIFIED="1490115489715" TEXT="--zone"/>
+</node>
+</node>
+<node CREATED="1490114112500" ID="ID_1174410828" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instance-groups/managed/resize" MODIFIED="1490115835166" TEXT="resize">
+<node CREATED="1490114116461" FOLDED="true" ID="ID_89380627" MODIFIED="1490115976766" TEXT="[instance group name]">
+<node CREATED="1490114123714" ID="ID_492866083" MODIFIED="1490114128916" TEXT="--size">
+<node CREATED="1490114128916" ID="ID_1957400800" MODIFIED="1490114130880" TEXT="new size">
+<node CREATED="1490114403340" ID="ID_451967006" MODIFIED="1490114474169" TEXT="note that reducing the number of instances does not remove the IP addresses of the closed instances from the list of authorized IP addresses for the Cloud SQL instance"/>
+</node>
+</node>
+<node CREATED="1490114133339" ID="ID_294735012" MODIFIED="1490114137143" TEXT="--zone"/>
+</node>
+</node>
+<node CREATED="1490114539772" ID="ID_1689435916" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instance-groups/managed/abandon-instances" MODIFIED="1490115847797" TEXT="abandon-instances">
+<node CREATED="1490114548013" ID="ID_384648744" MODIFIED="1490114554360" TEXT="[instance group name]">
+<node CREATED="1490114641727" ID="ID_1139331206" MODIFIED="1490114648939" TEXT="[instance name]">
+<node CREATED="1490114612488" ID="ID_877060871" MODIFIED="1490114912021" TEXT="removes instances from group but does not delete them, and reduces the target size of the group"/>
+</node>
+</node>
+</node>
+<node CREATED="1490114563107" ID="ID_731405422" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instance-groups/managed/delete-instances" MODIFIED="1490115858802" TEXT="delete-instances">
+<node CREATED="1490114623487" ID="ID_68482665" MODIFIED="1490114634694" TEXT="[instance group name]">
+<node CREATED="1490114654774" ID="ID_177595872" MODIFIED="1490114660927" TEXT="[instance name]">
+<node CREATED="1490114660927" ID="ID_561467915" MODIFIED="1490114799826" TEXT="removes instances from group and deletes it (not clear if this also reduces the target size of the group)"/>
+</node>
+</node>
+</node>
+<node CREATED="1490114838051" ID="ID_1676243097" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instance-groups/managed/recreate-instances" MODIFIED="1490115869566" TEXT="recreate-instances">
+<node CREATED="1490114846292" ID="ID_1677674727" MODIFIED="1490114854219" TEXT="[instance group name]">
+<node CREATED="1490114854219" FOLDED="true" ID="ID_127992728" MODIFIED="1490114994812" TEXT="[instance name]">
+<node CREATED="1490114858115" ID="ID_774472303" MODIFIED="1490114898637" TEXT="delete instances from group and recreates them (size of group is unchanged)"/>
+</node>
+</node>
+</node>
+<node CREATED="1490110543982" ID="ID_72818907" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instance-groups/managed/set-autoscaling" MODIFIED="1490110756136" TEXT="set-autoscaling">
+<node CREATED="1490110554862" FOLDED="true" ID="ID_176735697" MODIFIED="1490115973550" TEXT="[instance group name]">
+<node CREATED="1490110593979" ID="ID_993359709" MODIFIED="1490110599703" TEXT="--cool-down-period">
+<node CREATED="1490110703668" ID="ID_1576401563" MODIFIED="1490110838524" TEXT="number of seconds wait before resizing instance group (for scale down, value is 10 mins + this value)"/>
+</node>
+<node CREATED="1490115031385" ID="ID_146993063" MODIFIED="1490115061739" TEXT="--min-num-replicas">
+<node CREATED="1490115040440" ID="ID_12952679" MODIFIED="1490115053324" TEXT="minimum number of instances to start"/>
+</node>
+<node CREATED="1490110565229" ID="ID_570470792" MODIFIED="1490110574016" TEXT="--max-num-replicas">
+<node CREATED="1490110771025" ID="ID_1804528600" MODIFIED="1490110778805" TEXT="maximum number of instances to start"/>
+</node>
+<node CREATED="1490115074686" ID="ID_1971739872" MODIFIED="1490115076371" TEXT="--zone"/>
+<node CREATED="1490115631039" ID="ID_1980153592" MODIFIED="1490115636531" TEXT="--scale-based-on-cpu"/>
+<node CREATED="1490115646862" ID="ID_703298203" MODIFIED="1490115648194" TEXT="--scale-based-on-load-balancing"/>
+<node CREATED="1490115676964" ID="ID_263234287" MODIFIED="1490115678376" TEXT="--target-load-balancing-utilization">
+<node CREATED="1490115686027" ID="ID_502920851" MODIFIED="1490115690647" TEXT="0.0 or greater"/>
+</node>
+<node CREATED="1490110576075" ID="ID_1105462143" MODIFIED="1490110592847" TEXT="--target-cpu-utilization">
+<node CREATED="1490110643135" ID="ID_1726436422" MODIFIED="1490110678298" TEXT="0.75 = 75% (average usage between all cores in instance-group)"/>
+</node>
+</node>
+</node>
+<node CREATED="1490114932894" ID="ID_1086946594" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instance-groups/managed/set-instance-template" MODIFIED="1490115880407" TEXT="set-instance-template">
+<node CREATED="1490114937991" ID="ID_1656057739" MODIFIED="1490114946035" TEXT="[instance group name]">
+<node CREATED="1490114966324" ID="ID_1042140907" MODIFIED="1490114975600" TEXT="new template is only applied to new (or recreated) instances"/>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1489406736457" FOLDED="true" ID="ID_354514915" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instance-templates" MODIFIED="1490115970877" TEXT="instance-templates">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
+<node CREATED="1490112335272" ID="ID_373373833" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instance-templates/create" MODIFIED="1490115948451" TEXT="create">
+<node CREATED="1490112338633" ID="ID_612735965" MODIFIED="1490112347024" TEXT="[template name]">
+<node CREATED="1490112347025" ID="ID_192116853" MODIFIED="1490112358585" TEXT="--image">
+<node CREATED="1490112369983" ID="ID_1725660458" MODIFIED="1490112376395" TEXT="image to be used by instance"/>
+</node>
+<node CREATED="1490112380950" ID="ID_821518116" MODIFIED="1490112388815" TEXT="--tags">
+<node CREATED="1490112388815" ID="ID_1156265899" MODIFIED="1490112391306" TEXT="e.g. http"/>
+</node>
+<node CREATED="1490112394901" ID="ID_1760020797" MODIFIED="1490112414285" TEXT="--scopes">
+<node CREATED="1490112414285" ID="ID_1237445711" MODIFIED="1490112445135" TEXT="permissions for instance, e.g. sql-admin,storage-ro,logging-write"/>
+</node>
+<node CREATED="1490112448242" ID="ID_909646028" MODIFIED="1490112454303" TEXT="--metadata">
+<node CREATED="1490112459841" ID="ID_1478433071" MODIFIED="1490112484909" TEXT="e.g. startup script location; sql access details; etc."/>
+</node>
+</node>
+</node>
+<node CREATED="1490112751489" ID="ID_994396320" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instance-templates/delete" MODIFIED="1490115955865" TEXT="delete">
+<node CREATED="1490112753587" ID="ID_1740700287" MODIFIED="1490112758573" TEXT="[template name]"/>
+</node>
+<node CREATED="1490112760689" ID="ID_198145012" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instance-templates/describe" MODIFIED="1490115963072" TEXT="describe">
+<node CREATED="1490112765257" ID="ID_1033859523" MODIFIED="1490112770413" TEXT="[template name]"/>
+</node>
 </node>
 <node CREATED="1489406736457" ID="ID_1243107876" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/machine-types" MODIFIED="1489420201826" TEXT="machine-types (zonal)">
 <edge COLOR="#6699ff"/>

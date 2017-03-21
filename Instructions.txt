@@ -1,0 +1,25 @@
+1. Create firewall rule
+
+1. Setup instance
+
+1. Create docker container
+
+1. Create image from instance disk
+
+1. Create bucket in cloud data storage
+
+1. Copy files (e.g. startup scripts) to cloud data storage: gsutil cp [local file to copy] [bucket path]
+
+1. Setup Cloud SQL database
+
+1. Create instance-template: gcloud compute instance-templates create [instance-template-name] --image [image-name] --tags http --scopes=sql-admin,storage-ro,logging-write --metadata startup-script-url=[path to script in bucket],sql-name=[sql instance name],sql-ip=[sql IP address],sql-pw=[sql password]
+
+1. Ensure Cloud SQL is not authorized for any other networks: gcloud sql instances patch [sql instance name] --clear-authorized-networks
+
+1. Create instance group based on template: gcloud compute instance-groups managed create [instance-group-name] --base-instance-name [base-name-for-instance] --size [initial size, e.g. 1] --template [instance-template=name] --zone [zone]
+
+1. Set autoscaling for instance group: gcloud compute instance-groups managed set-autoscaling [instance-group-name] --max-num-replicas [max instances] --min-num-replicas [min instances] --target-cpu-utilization [0.0-1.0] --cool-down-period [seconds] --zone [zone]
+
+
+
+
