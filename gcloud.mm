@@ -1,6 +1,23 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node CREATED="1489406735405" ID="ID_789661850" LINK="https://cloud.google.com/sdk/gcloud/reference/" MODIFIED="1489481863597" TEXT="gcloud">
+<node CREATED="1489406735405" ID="ID_789661850" LINK="https://cloud.google.com/sdk/gcloud/reference/" MODIFIED="1490176372935" TEXT="gcloud">
+<richcontent TYPE="NOTE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Created by Steve Hall&#160;&#160;https://github.com/oclipa
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      The latest version is available for download from https://github.com/oclipa/GCloudMindMap
+    </p>
+  </body>
+</html>
+</richcontent>
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 <node CREATED="1489406736455" ID="ID_354967985" LINK="https://cloud.google.com/sdk/gcloud/reference/compute" MODIFIED="1489943796003" POSITION="right" TEXT="compute">
@@ -43,9 +60,34 @@
 </node>
 <node CREATED="1490102230143" ID="ID_670636460" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/addresses/list" MODIFIED="1490102271209" TEXT="list"/>
 </node>
-<node CREATED="1489406736455" ID="ID_336042316" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/backend-services" MODIFIED="1489420201842" TEXT="backend-services">
+<node CREATED="1489406736455" FOLDED="true" ID="ID_336042316" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/backend-services" MODIFIED="1490204428922" TEXT="backend-services (regional or global)">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
+<node CREATED="1490198716867" ID="ID_965018468" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/backend-services/create" MODIFIED="1490204376265" TEXT="create">
+<node CREATED="1490198718967" FOLDED="true" ID="ID_156872838" MODIFIED="1490204426886" TEXT="[backend service name]">
+<node CREATED="1490198726525" ID="ID_277771650" MODIFIED="1490198733275" TEXT="--http-health-checks">
+<node CREATED="1490198733275" ID="ID_495331011" MODIFIED="1490198739101" TEXT="[health check name]"/>
+</node>
+<node CREATED="1490198878853" ID="ID_565768901" MODIFIED="1490198884695" TEXT="--region"/>
+<node CREATED="1490203915961" ID="ID_958344821" MODIFIED="1490203918764" TEXT="--global"/>
+</node>
+</node>
+<node CREATED="1490203959916" ID="ID_752656549" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/backend-services/add-backend" MODIFIED="1490204400183" TEXT="add-backend">
+<node CREATED="1490203972020" FOLDED="true" ID="ID_60337090" MODIFIED="1490204427943" TEXT="[backend service name]">
+<node CREATED="1490203978233" ID="ID_1091588638" MODIFIED="1490203983907" TEXT="--instance-group">
+<node CREATED="1490203983907" ID="ID_1046823727" MODIFIED="1490203991137" TEXT="[instance group name]"/>
+</node>
+<node CREATED="1490204002504" ID="ID_361894527" MODIFIED="1490204007559" TEXT="--balancing-rate">
+<node CREATED="1490204007559" ID="ID_944958196" MODIFIED="1490204032208" TEXT="CONNECTION | RATE | UTILIZATION"/>
+</node>
+<node CREATED="1490204042253" ID="ID_1190430104" MODIFIED="1490204051340" TEXT="--max-rate-per-instance">
+<node CREATED="1490204051340" ID="ID_1539148286" MODIFIED="1490204069182" TEXT="max requests per second, e.g. 100"/>
+</node>
+<node CREATED="1490204078823" ID="ID_505557021" MODIFIED="1490204086271" TEXT="--instance-group-zone">
+<node CREATED="1490204086271" ID="ID_753624646" MODIFIED="1490204100773" TEXT="zone for instance group"/>
+</node>
+</node>
+</node>
 </node>
 <node CREATED="1489406736455" FOLDED="true" ID="ID_436580227" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/disk-types" MODIFIED="1489919267495" TEXT="disk-types">
 <edge COLOR="#6699ff"/>
@@ -184,23 +226,37 @@
 </node>
 </node>
 </node>
-<node CREATED="1489406736455" ID="ID_1137477053" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/forwarding-rules" MODIFIED="1489420201842" TEXT="forwarding-rules">
+<node CREATED="1489406736455" FOLDED="true" ID="ID_1137477053" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/forwarding-rules" MODIFIED="1490204432028" TEXT="forwarding-rules">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
+<node CREATED="1490204171478" ID="ID_363530353" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/forwarding-rules/create" MODIFIED="1490204421511" TEXT="create">
+<node CREATED="1490204175072" FOLDED="true" ID="ID_221761919" MODIFIED="1490204430902" TEXT="[forwarding rule name]">
+<node CREATED="1490204184524" ID="ID_1786117144" MODIFIED="1490204188658" TEXT="--global"/>
+<node CREATED="1490204190968" ID="ID_1617904654" MODIFIED="1490204192643" TEXT="--ports">
+<node CREATED="1490204192643" ID="ID_1045813202" MODIFIED="1490204195025" TEXT="e.g. 80"/>
+</node>
+<node CREATED="1490204196680" ID="ID_869019961" MODIFIED="1490204203050" TEXT="--target-http-proxy">
+<node CREATED="1490204203051" ID="ID_15690239" MODIFIED="1490204210777" TEXT="[target proxy name]"/>
+</node>
+</node>
+</node>
 </node>
 <node CREATED="1489406736456" ID="ID_646659714" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/health-checks" MODIFIED="1489420201842" TEXT="health-checks">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736456" ID="ID_1206052915" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/http-health-checks" MODIFIED="1489420201842" TEXT="http-health-checks">
+<node CREATED="1489406736456" FOLDED="true" ID="ID_1206052915" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/http-health-checks" MODIFIED="1490204433827" TEXT="http-health-checks">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
+<node CREATED="1490198513700" ID="ID_1680553961" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/http-health-checks/create" MODIFIED="1490198573319" TEXT="create">
+<node CREATED="1490198517069" ID="ID_1793564039" MODIFIED="1490198524901" TEXT="[health check name]"/>
+</node>
 </node>
 <node CREATED="1489406736456" ID="ID_1429535848" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/https-health-checks" MODIFIED="1489420201842" TEXT="https-health-checks">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736457" FOLDED="true" ID="ID_908773944" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/images" MODIFIED="1490102280357" TEXT="images (global)">
+<node CREATED="1489406736457" FOLDED="true" ID="ID_908773944" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/images" MODIFIED="1490204438260" TEXT="images (global)">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 <node CREATED="1489417043062" FOLDED="true" ID="ID_1802701159" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/images/list" MODIFIED="1490102277012" TEXT="list">
@@ -307,7 +363,7 @@
 </node>
 </node>
 </node>
-<node COLOR="#000000" CREATED="1489406736455" FOLDED="true" ID="ID_973559281" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instances" MODIFIED="1490101644568" STYLE="fork" TEXT="instances (zonal)">
+<node COLOR="#000000" CREATED="1489406736455" FOLDED="true" ID="ID_973559281" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instances" MODIFIED="1490176771816" STYLE="fork" TEXT="instances (zonal)">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 <node CREATED="1489406736455" ID="ID_1800727351" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instances/tail-serial-port-output" MODIFIED="1489480421519" TEXT="tail-serial-port-output">
@@ -343,7 +399,7 @@
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736456" FOLDED="true" ID="ID_624894508" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instances/attach-disk" MODIFIED="1489919399537" TEXT="attach-disk">
+<node CREATED="1489406736456" FOLDED="true" ID="ID_624894508" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instances/attach-disk" MODIFIED="1490176697907" TEXT="attach-disk">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 <node CREATED="1489493192134" FOLDED="true" ID="ID_1040858891" MODIFIED="1489918130699" TEXT="[instance name]">
@@ -365,10 +421,10 @@
 </node>
 </node>
 </node>
-<node CREATED="1489406736456" ID="ID_22138527" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instances/create" MODIFIED="1490098676584" TEXT="create">
+<node CREATED="1489406736456" FOLDED="true" ID="ID_22138527" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instances/create" MODIFIED="1490176684610" TEXT="create">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
-<node CREATED="1489412432816" ID="ID_675518627" MODIFIED="1490098678409" TEXT="[instance name]">
+<node CREATED="1489412432816" FOLDED="true" ID="ID_675518627" MODIFIED="1490176683005" TEXT="[instance name]">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 <node CREATED="1489412441049" ID="ID_661814257" MODIFIED="1489833675621" TEXT="--subnet">
@@ -460,10 +516,10 @@
 <font NAME="SansSerif" SIZE="10"/>
 </node>
 </node>
-<node CREATED="1489406736456" ID="ID_556301561" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instances/delete" MODIFIED="1489924541661" TEXT="delete">
+<node CREATED="1489406736456" FOLDED="true" ID="ID_556301561" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instances/delete" MODIFIED="1490176696624" TEXT="delete">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
-<node CREATED="1489413107003" ID="ID_711444225" MODIFIED="1489924544687" TEXT="[instance name]">
+<node CREATED="1489413107003" FOLDED="true" ID="ID_711444225" MODIFIED="1490176695275" TEXT="[instance name]">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 <node CREATED="1489413122133" ID="ID_1708342173" MODIFIED="1489833675620" TEXT="--zone">
@@ -550,10 +606,10 @@
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736456" ID="ID_390063614" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instances/reset" MODIFIED="1489420182280" TEXT="reset">
+<node CREATED="1489406736456" FOLDED="true" ID="ID_390063614" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instances/reset" MODIFIED="1490176700922" TEXT="reset">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
-<node CREATED="1489946873808" ID="ID_728557890" MODIFIED="1489946879895" TEXT="[instance name]">
+<node CREATED="1489946873808" FOLDED="true" ID="ID_728557890" MODIFIED="1490176699899" TEXT="[instance name]">
 <node CREATED="1489946882021" ID="ID_175882231" MODIFIED="1489946883455" TEXT="--zone"/>
 </node>
 </node>
@@ -581,21 +637,21 @@
 </node>
 </node>
 </node>
-<node CREATED="1489406736457" ID="ID_1647457659" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instance-groups" MODIFIED="1490110530160" TEXT="instance-groups">
+<node CREATED="1489406736457" FOLDED="true" ID="ID_1647457659" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instance-groups" MODIFIED="1490198504915" TEXT="instance-groups (zonal)">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
-<node CREATED="1489511164253" ID="ID_738752864" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instance-groups/unmanaged/" MODIFIED="1490110531352" TEXT="unmanaged">
+<node CREATED="1489511164253" FOLDED="true" ID="ID_738752864" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instance-groups/unmanaged/" MODIFIED="1490176689998" TEXT="unmanaged">
 <font NAME="SansSerif" SIZE="10"/>
 <node CREATED="1489511181248" ID="ID_1609322873" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instance-groups/unmanaged/create" MODIFIED="1489512225728" TEXT="create"/>
 </node>
-<node CREATED="1490110538721" ID="ID_949665793" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instance-groups/managed/" MODIFIED="1490115985445" TEXT="managed">
+<node CREATED="1490110538721" FOLDED="true" ID="ID_949665793" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instance-groups/managed/" MODIFIED="1490198503780" TEXT="managed">
 <node CREATED="1490112868387" ID="ID_1147461973" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instance-groups/managed/create" MODIFIED="1490115826654" TEXT="create">
-<node CREATED="1490112871148" FOLDED="true" ID="ID_1500195091" MODIFIED="1490115975622" TEXT="[instance group name]">
+<node CREATED="1490112871148" FOLDED="true" ID="ID_1500195091" MODIFIED="1490198502046" TEXT="[instance group name]">
 <node CREATED="1490112880363" ID="ID_1491904124" MODIFIED="1490112892613" TEXT="--base-instance-name">
 <node CREATED="1490112893961" ID="ID_303137070" MODIFIED="1490113120081" TEXT="the base name of the instance names (e.g. [base-name]-[random identifier string]"/>
 </node>
 <node CREATED="1490112909872" ID="ID_1963994443" MODIFIED="1490112914294" TEXT="--size">
-<node CREATED="1490112914294" ID="ID_1985226596" MODIFIED="1490112921260" TEXT="the number of instances in the group"/>
+<node CREATED="1490112914294" ID="ID_1985226596" MODIFIED="1490197389377" TEXT="the number of instances in the group (if there is a problem running this command, try putting the size in double quotes!)"/>
 </node>
 <node CREATED="1490112924375" ID="ID_155903467" MODIFIED="1490112929408" TEXT="--template">
 <node CREATED="1490112929409" ID="ID_346979158" MODIFIED="1490112950587" TEXT="the instance-template to use for the instances]"/>
@@ -604,7 +660,7 @@
 </node>
 </node>
 <node CREATED="1490115475607" ID="ID_393739912" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instance-groups/managed/delete" MODIFIED="1490115887074" TEXT="delete">
-<node CREATED="1490115480488" ID="ID_1242407369" MODIFIED="1490115486952" TEXT="[instance group name]">
+<node CREATED="1490115480488" FOLDED="true" ID="ID_1242407369" MODIFIED="1490176776184" TEXT="[instance group name]">
 <node CREATED="1490115486952" ID="ID_857515304" MODIFIED="1490115489715" TEXT="--zone"/>
 </node>
 </node>
@@ -619,21 +675,21 @@
 </node>
 </node>
 <node CREATED="1490114539772" ID="ID_1689435916" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instance-groups/managed/abandon-instances" MODIFIED="1490115847797" TEXT="abandon-instances">
-<node CREATED="1490114548013" ID="ID_384648744" MODIFIED="1490114554360" TEXT="[instance group name]">
+<node CREATED="1490114548013" FOLDED="true" ID="ID_384648744" MODIFIED="1490176780876" TEXT="[instance group name]">
 <node CREATED="1490114641727" ID="ID_1139331206" MODIFIED="1490114648939" TEXT="[instance name]">
 <node CREATED="1490114612488" ID="ID_877060871" MODIFIED="1490114912021" TEXT="removes instances from group but does not delete them, and reduces the target size of the group"/>
 </node>
 </node>
 </node>
 <node CREATED="1490114563107" ID="ID_731405422" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instance-groups/managed/delete-instances" MODIFIED="1490115858802" TEXT="delete-instances">
-<node CREATED="1490114623487" ID="ID_68482665" MODIFIED="1490114634694" TEXT="[instance group name]">
+<node CREATED="1490114623487" FOLDED="true" ID="ID_68482665" MODIFIED="1490176782417" TEXT="[instance group name]">
 <node CREATED="1490114654774" ID="ID_177595872" MODIFIED="1490114660927" TEXT="[instance name]">
 <node CREATED="1490114660927" ID="ID_561467915" MODIFIED="1490114799826" TEXT="removes instances from group and deletes it (not clear if this also reduces the target size of the group)"/>
 </node>
 </node>
 </node>
 <node CREATED="1490114838051" ID="ID_1676243097" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instance-groups/managed/recreate-instances" MODIFIED="1490115869566" TEXT="recreate-instances">
-<node CREATED="1490114846292" ID="ID_1677674727" MODIFIED="1490114854219" TEXT="[instance group name]">
+<node CREATED="1490114846292" FOLDED="true" ID="ID_1677674727" MODIFIED="1490176783306" TEXT="[instance group name]">
 <node CREATED="1490114854219" FOLDED="true" ID="ID_127992728" MODIFIED="1490114994812" TEXT="[instance name]">
 <node CREATED="1490114858115" ID="ID_774472303" MODIFIED="1490114898637" TEXT="delete instances from group and recreates them (size of group is unchanged)"/>
 </node>
@@ -662,8 +718,16 @@
 </node>
 </node>
 <node CREATED="1490114932894" ID="ID_1086946594" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instance-groups/managed/set-instance-template" MODIFIED="1490115880407" TEXT="set-instance-template">
-<node CREATED="1490114937991" ID="ID_1656057739" MODIFIED="1490114946035" TEXT="[instance group name]">
+<node CREATED="1490114937991" FOLDED="true" ID="ID_1656057739" MODIFIED="1490176784273" TEXT="[instance group name]">
 <node CREATED="1490114966324" ID="ID_1042140907" MODIFIED="1490114975600" TEXT="new template is only applied to new (or recreated) instances"/>
+</node>
+</node>
+<node CREATED="1490197494518" ID="ID_1228529083" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/instance-groups/managed/set-named-port" MODIFIED="1490197559734" TEXT="set-named-ports">
+<node CREATED="1490197500610" FOLDED="true" ID="ID_101483304" MODIFIED="1490197570738" TEXT="[instance group name]">
+<node CREATED="1490197508049" ID="ID_562996380" MODIFIED="1490197513244" TEXT="--named-ports">
+<node CREATED="1490197522539" ID="ID_552874780" MODIFIED="1490197527892" TEXT="e.g. http:80"/>
+</node>
+<node CREATED="1490197514413" ID="ID_609319322" MODIFIED="1490197516468" TEXT="--zone"/>
 </node>
 </node>
 </node>
@@ -807,9 +871,16 @@
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736457" ID="ID_844666063" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/target-http-proxies" MODIFIED="1489420201826" TEXT="target-http-proxies">
+<node CREATED="1489406736457" FOLDED="true" ID="ID_844666063" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/target-http-proxies" MODIFIED="1490204479581" TEXT="target-http-proxies">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
+<node CREATED="1490204141597" ID="ID_1775715770" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/target-http-proxies/create" MODIFIED="1490204456871" TEXT="create">
+<node CREATED="1490204146748" ID="ID_871363958" MODIFIED="1490204154843" TEXT="[target proxy name]">
+<node CREATED="1490204156884" ID="ID_899108772" MODIFIED="1490204159332" TEXT="--url-map">
+<node CREATED="1490204159333" ID="ID_56916303" MODIFIED="1490204163387" TEXT="[url map name]"/>
+</node>
+</node>
+</node>
 </node>
 <node CREATED="1489406736457" ID="ID_1008785595" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/target-instances" MODIFIED="1489420201826" TEXT="target-instances">
 <edge COLOR="#6699ff"/>
@@ -827,9 +898,16 @@
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
 </node>
-<node CREATED="1489406736457" ID="ID_1236671788" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/url-maps" MODIFIED="1489420201826" TEXT="url-maps">
+<node CREATED="1489406736457" FOLDED="true" ID="ID_1236671788" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/url-maps" MODIFIED="1490204481629" TEXT="url-maps">
 <edge COLOR="#6699ff"/>
 <font NAME="SansSerif" SIZE="10"/>
+<node CREATED="1490204114726" ID="ID_706214526" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/url-maps/create" MODIFIED="1490204476975" TEXT="create">
+<node CREATED="1490204117348" ID="ID_139918413" MODIFIED="1490204123988" TEXT="[url map name]">
+<node CREATED="1490204123989" ID="ID_1900649221" MODIFIED="1490204128554" TEXT="--default-service">
+<node CREATED="1490204128555" ID="ID_796473212" MODIFIED="1490204133956" TEXT="[backend service name]"/>
+</node>
+</node>
+</node>
 </node>
 <node CREATED="1489406736457" ID="ID_935667826" LINK="https://cloud.google.com/sdk/gcloud/reference/compute/vpn-tunnels" MODIFIED="1489420201826" TEXT="vpn-tunnels">
 <edge COLOR="#6699ff"/>
