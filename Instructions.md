@@ -1,25 +1,25 @@
 
 ## Cloud Console:
 1. Create static IP address for main instance:
-  * gcloud compute addresses create [address name] --region [instance region]
-  * Note IP address: INSTANCE_IP_ADDRESS=$(gcloud compute addresses describe [address name] --region [instance region] --format text | head -1 | awk '{print $2}')
+   * gcloud compute addresses create [address name] --region [instance region]
+   * Note IP address: INSTANCE_IP_ADDRESS=$(gcloud compute addresses describe [address name] --region [instance region] --format text | head -1 | awk '{print $2}')
 1. Create firewall rule to allow HTTP access to main instance:
-  * gcloud compute firewall-rules create default-allow-http --allow tcp:80 --target-tags [firewall rule tag]
+   * gcloud compute firewall-rules create default-allow-http --allow tcp:80 --target-tags [firewall rule tag]
 1. Create new instance: 
-  * gcloud compute instances create [instance name] --zone [instance zone] --tags [firewall rule tag] --address $INSTANCE_IP_ADDRESS
+   * gcloud compute instances create [instance name] --zone [instance zone] --tags [firewall rule tag] --address $INSTANCE_IP_ADDRESS
 
 ## SSH:
 1. SSH: Install necessary software in instance:
-  * Check everything is updated: sudo apt-get update
-  * Install MySQL client: sudo apt-get install -y -qq mysql-client 
-  * Install Apache: sudo apt-get install -y apache2
-  * Install Python: sudo apt-get install -y -qq python-pip
-  * Install Python Google API Client Library: sudo pip install --upgrade google-api-python-client
-  * Example scripts for using Python Google API Client Library can be found here: 
-     * [https://github.com/GoogleCloudPlatformTraining/cpo200-Google-API-Client-Library]
-     * [https://github.com/GoogleCloudPlatformTraining/cpo200-Google-Cloud-SQL-Admin-API]
+   * Check everything is updated: sudo apt-get update
+   * Install MySQL client: sudo apt-get install -y -qq mysql-client 
+   * Install Apache: sudo apt-get install -y apache2
+   * Install Python: sudo apt-get install -y -qq python-pip
+   * Install Python Google API Client Library: sudo pip install --upgrade google-api-python-client
+   * Example scripts for using Python Google API Client Library can be found here: 
+      * [https://github.com/GoogleCloudPlatformTraining/cpo200-Google-API-Client-Library]
+      * [https://github.com/GoogleCloudPlatformTraining/cpo200-Google-Cloud-SQL-Admin-API]
 1. Create docker container
-  * See the following for example docker installation script: [https://github.com/GoogleCloudPlatformTraining/cpo200-guestbook-vm.git]
+   * See the following for example docker installation script: [https://github.com/GoogleCloudPlatformTraining/cpo200-guestbook-vm.git]
 
 ## Cloud Console:
 1. Delete instance but keep boot disk: 
