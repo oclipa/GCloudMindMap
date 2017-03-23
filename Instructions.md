@@ -1,11 +1,11 @@
-## The goal of these instructions is to include all the basic steps required to set up a load balanced web server with a Cloud SQL backend 
+## Instructions for setting up a collection of load balanced web server instances, with a Cloud SQL backend 
 *Steve Hall, https://github.com/oclipa*
 
-## Cloud Console:
+## In the Cloud Console, create instances of a compute engine and an Cloud SQL database server:
 1. Create static IP address for main instance:
    * `gcloud compute addresses create [address name] --region [instance region]`
-   * Note IP address: 
-      * `INSTANCE_IP_ADDRESS=$(gcloud compute addresses describe [address name] --region [instance region] --format text | head -1 | awk '{print $2}')`
+1. Get the static IP address: 
+   * `INSTANCE_IP_ADDRESS=$(gcloud compute addresses describe [address name] --region [instance region] --format text | head -1 | awk '{print $2}')`
 1. Create firewall rule to allow HTTP access to main instance:
    * `gcloud compute firewall-rules create default-allow-http --allow tcp:80 --target-tags [firewall rule tag]`
 1. Create bucket in cloud data storage
@@ -33,14 +33,14 @@
    * `gcloud sql instances set-root-password [sql instance name] --password [sql password]`
 1. Set backup schedule for SQL instance: 
    * `gcloud sql instances patch [sql instance name] --backup-start-time [start time in 24H format in UTC: hh:mm)`
-1. Note IP address: 
+1. Get the IP address of the SQL instance: 
    * `SQL_IP_ADDRESS=$(gcloud sql instances describe guestbook-sql --format text | grep ipAddress | awk '{print $2}')`
 1. Register main instance IP address with SQL instance:
    * `gcloud sql instances patch [sql instance name] --authorized-networks $INSTANCE_IP_ADDRESS`
 1. Create new instance: 
    * `gcloud compute instances create [instance name] --zone [instance zone] --tags [firewall rule tag] --address $INSTANCE_IP_ADDRESS`
 
-## Instance SSH:
+## In the SSH shell for the compute engine instance, initialize the image and setup the SQL database:
 1. Check everything is updated: 
    * `sudo apt-get update`
 1. Install MySQL client: 
@@ -77,7 +77,7 @@
 1. Shutdown instance: 
    * `sudo shutdown -h now`
 
-## Cloud Console:
+## In the Cloud Console, create an image from the compute engine instance and setup load balanced servers based on the image:
 1. Delete instance but keep boot disk: 
    * `gcloud compute instances delete [instance name] --keep-disks boot --zone [instance zone]`
 1. Create new image from boot disk: 
