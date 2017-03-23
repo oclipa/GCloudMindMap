@@ -100,31 +100,28 @@
    * `gcloud compute instance-groups managed set-autoscaling [instance group name 1] --max-num-replicas [max instances] --min-num-replicas [min instances] --target-load-balancing-utilization [0.0-1.0]  --cool-down-period [seconds] --zone [primary zone]`
 1. Create auto-scaler instance to handle load balancing for second instance group:
    * `gcloud compute instance-groups managed set-autoscaling [instance group name 2] --max-num-replicas [max instances] --min-num-replicas [min instances] --target-load-balancing-utilization [0.0-1.0]  --cool-down-period [seconds] --zone [secondary zone]`
-
-# The following is a work in progress...
-Refer to diagram on following page: https://codelabs.developers.google.com/codelabs/cpo200-load-balancing/#4
-Trying to achieve the following:
-1. Create startup scripts (need to be fast as possible)
-1. Create instances and tag them
-1. Create firewall rules to allow traffic using the tags
-1. Create an HTTP health check
-1. Create a target pool and add instances to the pool (instance can be a managed instance group with auto-scaling)
-1. Create a forwarding rule that points to the pool
-
-## Cloud Console
 1. Create HTTP health check:
    * `gcloud compute http-health-checks create [health check name]`
 1. CPC: Create backend service (which manages instance groups)
-   * `gcloud compute backend-services create [backend service name] --http-health-checks [health check name]`
+   * `gcloud compute backend-services create [backend service name] --http-health-checks [health check name] --global`
 1. Add the first instance group to the backend service (with balancing by requests per second)
-   * `gcloud compute backend-services add-backend [backend service name] --instance-group [instance group name 1] --balancing-mode RATE --max-rate-per-instance [max requests per second, e.g. 100]  --instance-group-zone [primary zone]`
+   * `gcloud compute backend-services add-backend [backend service name] --instance-group [instance group name 1] --balancing-mode RATE --max-rate-per-instance [max requests per second, e.g. 100]  --instance-group-zone [primary zone] --global`
 1. Add the second instance group to the backend service (with balancing by requests per second)
-   * `gcloud compute backend-services add-backend [backend service name] --instance-group [instance group name 2] --balancing-mode RATE --max-rate-per-instance [max requests per second, e.g. 100]  --instance-group-zone [secondary zone]`
+   * `gcloud compute backend-services add-backend [backend service name] --instance-group [instance group name 2] --balancing-mode RATE --max-rate-per-instance [max requests per second, e.g. 100]  --instance-group-zone [secondary zone] --global`
 1. Create URL map to map HTTP requests to backend service
    * `gcloud compute url-maps create [url map name] --default-service [backend service name]`
 1. Create HTTP proxy that routes packets from the forwarding rule to the URL map
    * `gcloud compute target-http-proxies create [target proxy name] --url-map [url map name]`
 1. Create a forwarding rile that assigns a global IP address tp the HTTP load balancer
    * `gcloud compute forwarding-rules create [forwarding rule name] --global --ports 80 --target-http-proxy [target proxy name]`
+1. Check the health of the backend-services (may take several minutes to initialize) 
+   * gcloud compute backend-services get-health guestbook-backend-service --global
+1. Get the load balancer external IP address:
+   * `LB_IP_ADDRESS=$(gcloud compute forwarding-rules describe [forwarding rule name] --global | grep IPAddress | awk '{print $2}')`
+1. To perform load balancing tests, install apache2-utils *in the Cloud Console* (not persisted after log-off)
+   * `sudo apt-get install -y -qq apache2-utils`
+1. Perform a benchmark test:
+   * `ab -n 5000 http://$LB_IP_ADDRESS/`
+
 
 
