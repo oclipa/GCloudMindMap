@@ -1,5 +1,5 @@
-# The goal of these instructions is to include all the basic steps required to set up a load balanced web server with a Cloud SQL backend 
-*Steve Hall, [https://github.com/oclipa]*
+## The goal of these instructions is to include all the basic steps required to set up a load balanced web server with a Cloud SQL backend 
+*Steve Hall, https://github.com/oclipa]*
 
 ## Cloud Console:
 1. Create static IP address for main instance:
@@ -9,7 +9,6 @@
    * gcloud compute firewall-rules create default-allow-http --allow tcp:80 --target-tags [firewall rule tag]
 1. Create new instance: 
    * gcloud compute instances create [instance name] --zone [instance zone] --tags [firewall rule tag] --address $INSTANCE_IP_ADDRESS
-
 ## Instance SSH:
 1. SSH: Install necessary software in instance:
    * Check everything is updated: sudo apt-get update
