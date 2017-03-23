@@ -1,5 +1,5 @@
 ## The goal of these instructions is to include all the basic steps required to set up a load balanced web server with a Cloud SQL backend 
-*Steve Hall, https://github.com/oclipa]*
+*Steve Hall, [https://github.com/oclipa]*
 
 ## Cloud Console:
 1. Create static IP address for main instance:
