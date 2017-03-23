@@ -4,7 +4,8 @@
 ## Cloud Console:
 1. Create static IP address for main instance:
    * `gcloud compute addresses create [address name] --region [instance region]`
-   * Note IP address: `INSTANCE_IP_ADDRESS=$(gcloud compute addresses describe [address name] --region [instance region] --format text | head -1 | awk '{print $2}')`
+   * Note IP address: 
+      * `INSTANCE_IP_ADDRESS=$(gcloud compute addresses describe [address name] --region [instance region] --format text | head -1 | awk '{print $2}')`
 1. Create firewall rule to allow HTTP access to main instance:
    * `gcloud compute firewall-rules create default-allow-http --allow tcp:80 --target-tags [firewall rule tag]`
 1. Create new instance: 
