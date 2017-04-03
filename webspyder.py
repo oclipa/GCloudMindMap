@@ -66,7 +66,7 @@ def spider(url, maxPages):
     numberVisited = 0
 
 
-    t = Tree(url)
+    root = Tree(url)
 
     # The main loop. Create a LinkParser and get all the links on the page.
     # Also search the page for the word or string
@@ -85,41 +85,70 @@ def spider(url, maxPages):
             parser = LinkParser()
             data, links = parser.getLinks(url)
         
-            currentParent = t
-            prevParent = t
+            parentList = []
+            parentLen = 0
+            addedLinks = []
             for link in links:
                 if ("https://cloud.google.com/sdk/gcloud/reference" in link 
                 and "https://cloud.google.com/sdk/gcloud/reference" != link
                 and "https://cloud.google.com/sdk/gcloud/reference/alpha" not in link
                 and "https://cloud.google.com/sdk/gcloud/reference/beta" not in link):
+
                     pagesToVisit = pagesToVisit + links
 
-                    bits = link.split('/')
+                    if (link not in addedLinks):
+                        print("%s" % (link))
 
-                    bitsLen = len(bits)
+                        bits = link.split('/')  # e.g. /root/parent/child
 
-                    lastBit = bits[bitsLen - 1]
-                    penultimateBit = bits[bitsLen - 2]
+                        bitsLen = len(bits) # e.g. 3
 
+                        lastBit = bits[bitsLen - 1] # e.g. child
+                        child = Tree(lastBit)
 
-                    if (penultimateBit != currentParent.name)
-                        currentParent = prevParent.add_child(penultimateBit)
+                        if (len(parentList) == 0):
+                            parentList = [root]
+                            parentLen = 6
 
-                    print("%s - %s" % (penultimateBit, lastBit))
+                        currentChild = None
+                        if (len(parentList) > 1):
+                            currentChild = parentList.pop() # get and remove
+                        
+                        currentParent = parentList.pop() # get and remove
 
-                    # split link based on /
-                    # last item is child node
-                    # second to last item is parent node
-                    # if parent node is same as previous parent node, add child node to previous parent node
-                    # if parent node is different from previous parent node, parent node
+                        if (bitsLen == parentLen + 1): # isChild
+                            currentParent.add_child(child)
+                            parentList.append(currentParent)
+                            parentList.append(child)
 
+                            print("%s + %s" % (currentParent.name, child.name))
 
-            # if data.find(word)>-1:
-            #     foundWord = True
-            #     # Add the pages that we visited to the end of our collection
-            #     # of pages to visit:
-            #     pagesToVisit = pagesToVisit + links
-            #     print(" **Success!**")
+                        elif (bitsLen == parentLen + 2): # going deeper down the tree
+                            name = currentParent.name
+                            parentList.append(currentParent)
+                            if (currentChild != None):
+                                currentChild.add_child(child)
+                                parentList.append(currentChild)
+                                name = currentChild.name
+                            parentList.append(child)
+                            parentLen = bitsLen - 1
+
+                            print("%s + %s" % (name, child.name))
+
+                        elif (bitsLen == parentLen): # going shallower up the tree
+                            if (len(parentList) > 0):
+                                currentParent = parentList.pop() # get and remove
+                            else:
+                                currentParent = root
+                            currentParent.add_child(child)
+                            parentList.append(currentParent)
+                            parentList.append(child)
+                            parentLen = bitsLen - 1
+
+                            print("%s + %s" % (currentParent.name, child.name))
+
+                        addedLinks.append(link)
+
         except:
             print(" **Failed!**")
             type, value, traceback = sys.exc_info()
@@ -146,22 +175,22 @@ def main(argv):
    try:
       opts, args = getopt.getopt(argv,"hu:m:",["url=","maxpages="])
    except getopt.GetoptError:
-      print 'webspyder.py -u url -m maxpages'
+      print('webspyder.py -u url -m maxpages')
       sys.exit(2)
    for opt, arg in opts:
       if opt == '-h':
-         print 'webspyder.py -u url -m maxpages'
+         print('webspyder.py -u url -m maxpages')
          sys.exit()
       elif opt in ("-u", "--url"):
          url = arg
       elif opt in ("-m", "--maxpages"):
          maxpages = arg
-   print 'URL is ', url
-   print 'Maxpages is ', maxpages
+   print('URL is %s' % url)
+   print('Maxpages is %s' % maxpages)
 
    spider(url, maxpages)
 
-   print 'FINISHED'
+   print('FINISHED')
 
 if __name__ == "__main__":
    main(sys.argv[1:])
