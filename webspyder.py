@@ -197,6 +197,7 @@ def generate_mindmap(root, root_url):
     try:
         map_file = open('gcloud_autogen.mm', 'w')
 
+        current_time = time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime())
         current_epoch = str(calendar.timegm(time.gmtime()))
 
         header = "<map version=\"1.0.1\">\n \
@@ -207,7 +208,8 @@ def generate_mindmap(root, root_url):
                     <richcontent TYPE=\"NOTE\"><html>\n \
                     <head></head>\n \
                     <body>\n \
-                    <p>Generated using webspyder.py</p>\n \
+                    <p>Generated using webspyder.py: " + current_time + "</p>\n \
+                    <p></p>\n \
                     <p>Created by Steve Hall&#160;&#160;https://github.com/oclipa</p>\n \
                     <p></p>\n \
                     <p>The latest version is available for download from https://github.com/oclipa/GCloudMindMap</p>\n \
@@ -217,10 +219,10 @@ def generate_mindmap(root, root_url):
 
         map_file.write(header)
 
-        position = "left"
+        position = "right"
 
         for child in root.children:
-            position = "right" if position == "left" else "left"
+            position = "left" if position == "right" else "right"
 
             absolute_url = root_url + "/" + child.name
 
